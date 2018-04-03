@@ -1,1 +1,2 @@
 alias g=git
+alias viminstall="vim +PluginInstall +qall"

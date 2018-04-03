@@ -7,3 +7,5 @@
 	unstage = reset HEAD --
 	aa = add .
 	cm = commit
+[core]
+	editor = /usr/bin/vim

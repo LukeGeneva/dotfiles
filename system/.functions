@@ -1,0 +1,4 @@
+# Create and enter new directory
+function mk() {
+	mkdir -p "$@" && cd "$@"
+}

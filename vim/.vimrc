@@ -15,6 +15,8 @@ Plugin 'leshill/vim-json'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -64,3 +66,10 @@ set tw=500
 map 0 ^
 " Editing git commits
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" Support .js extension for JSX
+let g:jsx_ext_required=0
+
+" Open NERDTree when a directory is opened
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif

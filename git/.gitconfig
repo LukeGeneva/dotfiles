@@ -6,3 +6,4 @@
 	co = checkout
 	unstage = reset HEAD --
 	aa = add .
+	cm = commit

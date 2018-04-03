@@ -1,3 +1,8 @@
 [user]
 	name = Luke Geneva
 	email = lukegeneva@gmail.com
+[alias]
+	s = status
+	co = checkout
+	unstage = reset HEAD --
+	aa = add .

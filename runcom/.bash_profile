@@ -1,3 +1,7 @@
+for DOTFILE in `find ~/dotfiles/system`
+do
+	[ -f "$DOTFILE" ] && source "$DOTFILE"
+done
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

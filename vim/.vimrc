@@ -14,6 +14,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'leshill/vim-json'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 filetype plugin indent on

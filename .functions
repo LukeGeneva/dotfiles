@@ -1,4 +1,9 @@
 # Create and enter new directory
 function mk() {
-	mkdir -p "$@" && cd "$@"
+	mkdir -p "$@" && cd "$@";
+}
+
+# Sync dotfiles
+function syncdot() {
+	source ~/dotfiles/sync.sh;
 }

@@ -8,14 +8,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 function doIt() {
-	rsync --exclude ".git/" \
-		--exclude ".DS_Store" \
-		--exclude ".osx" \
-		--exclude "install.sh" \
-		--exclude "brew.sh" \
-		--exclude "README.md" \
-		--exclude "LICENSE-MIT.txt" \
-		-avh --no-perms . ~;
+	source ./sync.sh;
 	source ~/.zshrc;
 }
 
@@ -36,3 +29,6 @@ vim +PluginInstall +qall
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# run brew installations
+source ./brew.sh

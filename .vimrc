@@ -76,3 +76,6 @@ let g:jsx_ext_required=0
 " Open NERDTree when a directory is opened
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+" Allow NERDTree to show hidden files
+let NERDTreeShowHidden=1

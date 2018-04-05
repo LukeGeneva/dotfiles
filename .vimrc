@@ -17,6 +17,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'ervandew/supertab'
 
 call vundle#end()
 filetype plugin indent on

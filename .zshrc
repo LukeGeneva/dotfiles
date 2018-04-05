@@ -81,10 +81,6 @@ unset file;
 # This loads nvm bash_completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-if [ -f /home/linuxbrew/.linuxbrew/share/bash-completion/bash_completion ]; then
-	. /home/linuxbrew/.linuxbrew/share/bash-completion/bash_completion
-fi
-
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'

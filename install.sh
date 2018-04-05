@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	sudo apt-get install build-essential curl file git python-setuptools
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"

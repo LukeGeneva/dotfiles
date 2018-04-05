@@ -1,2 +1,6 @@
 alias g=git
 alias viminstall="vim +PluginInstall +qall"
+alias dl="cd ~/Downloads"
+alias doc="cd ~/Documents"
+alias dot="cd ~/dotfiles"
+alias reload="exec ${SHELL} -l"

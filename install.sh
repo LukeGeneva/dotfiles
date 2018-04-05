@@ -32,3 +32,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # run brew installations
 source ./brew.sh
+
+# reload terminal
+exec ${SHELL} -l

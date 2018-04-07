@@ -9,16 +9,23 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'leshill/vim-json'
-Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/nerdtree'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
+Plugin 'kien/ctrlp.vim'
+Plugin 'leshill/vim-json'
 Plugin 'moll/vim-node'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/html5-syntax.vim'
+Plugin 'othree/html5.vim'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 filetype plugin indent on

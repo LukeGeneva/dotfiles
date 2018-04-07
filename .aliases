@@ -3,4 +3,6 @@ alias viminstall="vim +PluginInstall +qall"
 alias dl="cd ~/Downloads"
 alias doc="cd ~/Documents"
 alias dot="cd ~/dotfiles"
+alias gh="cd ~/github"
 alias reload="exec ${SHELL} -l"
+alias o=open

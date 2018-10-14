@@ -3,6 +3,7 @@
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	sudo apt-get -y install build-essential curl file git python-setuptools zsh
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+	PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi

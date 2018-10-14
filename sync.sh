@@ -1,3 +1,5 @@
+mkdir -p ~/dotfiles
+
 rsync --exclude ".git/" \
 	--exclude ".DS_Store" \
 	--exclude ".osx" \

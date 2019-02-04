@@ -5,3 +5,4 @@ alias dot="cd ~/dotfiles"
 alias gh="cd ~/github"
 alias reload="exec ${SHELL} -l"
 alias o=open
+alias vs="code ."

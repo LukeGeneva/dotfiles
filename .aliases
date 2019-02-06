@@ -1,8 +1,9 @@
-alias viminstall="vim +PluginInstall +qall"
 alias dl="cd ~/Downloads"
 alias doc="cd ~/Documents"
 alias dot="cd ~/dotfiles"
-alias reload="exec ${SHELL} -l"
-alias o=open
-alias vs="code ."
+alias f=find
 alias g=git
+alias o=open
+alias reload="exec ${SHELL} -l"
+alias viminstall="vim +PluginInstall +qall"
+alias vs="code ."

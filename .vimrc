@@ -42,6 +42,10 @@ set smarttab
 set tabstop=4
 set shiftwidth=4
 
+" Swap : and ;
+noremap : ;
+noremap ; :
+
 " Linebreak on 500 characters
 set lbr
 set tw=500

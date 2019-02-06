@@ -9,9 +9,3 @@ export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
 
 export NVM_DIR="$HOME/.nvm"
-
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
-	PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-	export MANPATH="$(brew --prefix)/share/man:$MANPATH"
-	export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
-fi

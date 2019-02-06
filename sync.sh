@@ -1,6 +1,5 @@
-mkdir -p ~/dotfiles
-
 rsync --exclude ".git/" \
+	--exclude ".gitignore" \
 	--exclude ".DS_Store" \
 	--exclude ".osx" \
 	--exclude "install.sh" \
@@ -8,6 +7,4 @@ rsync --exclude ".git/" \
 	--exclude "sync.sh" \
 	--exclude "README.md" \
 	--exclude "LICENSE-MIT.txt" \
-	-avh --no-perms ./ ~/dotfiles;
-
-cp ./.zshrc ~/
+	-avh --no-perms ./ ~/;

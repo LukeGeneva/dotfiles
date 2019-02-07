@@ -5,5 +5,6 @@ alias f=find
 alias g=git
 alias o=open
 alias reload="exec ${SHELL} -l"
+alias tmux="TERM=screen-256color-bce tmux"
 alias viminstall="vim +PluginInstall +qall"
 alias vs="code ."

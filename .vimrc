@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'mattn/emmet-vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
@@ -97,7 +98,7 @@ let g:jsx_ext_required=0
 set timeout timeoutlen=5000 ttimeoutlen=100
 
 set background=dark
-colorscheme solarized
+colorscheme molokai
 
 " Multicursor settings
 let g:multi_cursor_use_default_mapping=0
@@ -110,7 +111,3 @@ let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
-" Indent Guides
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=gray   ctermbg=Gray
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=LightGray ctermbg=LightGray

@@ -18,3 +18,9 @@ function v() {
 		vim "$@";
 	fi;
 }
+
+function vimplugin() {
+  sed -i "13iPlugin '$1'" ~/dotfiles/.vimrc;
+  cp ~/dotfiles/.vimrc ~;
+  viminstall;
+}

@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'shougo/deoplete.nvim'
 Plugin 'junegunn/fzf'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
@@ -122,3 +123,6 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 
 " FZF
 nnoremap <silent> <C-p> :FZF<CR>
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1

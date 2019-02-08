@@ -16,7 +16,10 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'mattn/emmet-vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
+Plugin 'prettier/vim-prettier'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-airline/vim-airline'
 
@@ -94,9 +97,6 @@ autocmd Filetype gitcommit setlocal spell tw=72
 " Support .js extension for JSX
 let g:jsx_ext_required=0
 
-" Make SHIFT+O respond faster
-set timeout timeoutlen=5000 ttimeoutlen=100
-
 set background=dark
 colorscheme molokai
 
@@ -111,3 +111,7 @@ let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
+" Prettier
+let g:prettier#autoformat = 0
+let g:prettier#config#single_quote = 'true'
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier

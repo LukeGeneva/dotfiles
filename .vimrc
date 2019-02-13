@@ -126,3 +126,6 @@ nnoremap <silent> <C-p> :FZF<CR>
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
+
+" NERDTree
+let g:NERDTreeNodeDelimiter = "\u00a0"

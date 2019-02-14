@@ -12,8 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'junegunn/fzf'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'editorconfig/editorconfig-vim'
+"Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ervandew/supertab'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'mattn/emmet-vim'
@@ -89,8 +88,8 @@ noremap : ;
 noremap ; :
 
 " Linebreak on 500 characters
- set lbr
- set tw=500
+set lbr
+set tw=500
 
 " Editing git commits
 autocmd filetype gitcommit setlocal spell tw=72

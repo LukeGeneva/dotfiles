@@ -1,5 +1,5 @@
 function findall() {
-  grep -R --exclude-dir=**/node_modules --exclude-dir=**/build --exclude-dir=**/dist $1 ./;
+  grep -R -i --exclude-dir=**/node_modules --exclude-dir=**/build --exclude-dir=**/dist $1 ./;
 }
 
 # Create and enter new directory

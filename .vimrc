@@ -89,14 +89,14 @@ noremap : ;
 noremap ; :
 
 " Linebreak on 500 characters
-set lbr
-set tw=500
+ set lbr
+ set tw=500
+
+" Editing git commits
+autocmd filetype gitcommit setlocal spell tw=72
 
 " Remap VIM 0 to first non-blank character
 map 0 ^
-
-" Editing git commits
-autocmd Filetype gitcommit setlocal spell tw=72
 
 " Support .js extension for JSX
 let g:jsx_ext_required=0

@@ -7,4 +7,4 @@ rsync --exclude ".git/" \
 	--exclude "sync.sh" \
 	--exclude "README.md" \
 	--exclude "LICENSE-MIT.txt" \
-	-avh --no-perms ./ ~/;
+	-avh --no-perms ~/dotfiles/ ~/;

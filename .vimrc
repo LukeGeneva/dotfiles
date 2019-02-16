@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'shougo/deoplete.nvim'
 Plugin 'junegunn/fzf'
 Plugin 'airblade/vim-gitgutter'
 "Plugin 'editorconfig/editorconfig-vim'

@@ -4,6 +4,7 @@ alias dot="cd ~/dotfiles"
 alias f=findall
 alias g=git
 alias o=open
+alias proj="cd ~/projects"
 alias reload="exec ${SHELL} -l"
 alias sd=syncdot
 alias tmux="TERM=screen-256color-bce tmux"

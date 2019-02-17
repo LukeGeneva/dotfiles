@@ -13,7 +13,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'shougo/deoplete.nvim'
 Plugin 'junegunn/fzf'
 Plugin 'airblade/vim-gitgutter'
-"Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ervandew/supertab'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'mattn/emmet-vim'
@@ -125,3 +124,6 @@ nnoremap <silent> <C-p> :FZF<CR>
 
 " NERDTree
 let g:NERDTreeNodeDelimiter = "\u00a0"
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1

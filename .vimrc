@@ -10,17 +10,18 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'shougo/deoplete.nvim'
-Plugin 'junegunn/fzf'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ervandew/supertab'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'junegunn/fzf'
 Plugin 'mattn/emmet-vim'
+Plugin 'morhetz/gruvbox'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
 Plugin 'prettier/vim-prettier'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'shougo/deoplete.nvim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-commentary'
 Plugin 'vim-airline/vim-airline'
@@ -101,7 +102,7 @@ map 0 ^
 let g:jsx_ext_required=0
 
 set background=dark
-colorscheme molokai
+colorscheme gruvbox
 
 " Multicursor settings
 let g:multi_cursor_use_default_mapping=0
@@ -124,6 +125,10 @@ nnoremap <silent> <C-p> :FZF<CR>
 
 " NERDTree
 let g:NERDTreeNodeDelimiter = "\u00a0"
+let NERDTreeQuitOnOpen=0
+let NERDTreeMouseMode=2
+let NERDTreeShowHidden=1
+let NERDTreeKeepTreeInNewTab=1
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1

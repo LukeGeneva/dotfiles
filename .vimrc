@@ -119,9 +119,9 @@ let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
 " Prettier
+"let g:prettier#config#single_quote = 'true'
 let g:prettier#autoformat = 0
-let g:prettier#config#single_quote = 'true'
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 " FZF
 nnoremap <silent> <C-p> :FZF<CR>

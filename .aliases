@@ -8,5 +8,6 @@ alias proj="cd ~/projects"
 alias reload="exec ${SHELL} -l"
 alias sd=syncdot
 alias tmux="TERM=screen-256color-bce tmux"
+alias v=vim
 alias viminstall="vim +PluginInstall +qall"
 alias vs="code ."

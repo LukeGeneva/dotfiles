@@ -13,16 +13,6 @@ function syncdot() {
 	reload;
 }
 
-# `v` with no arguments opens the current directory in Vim,
-# otherwise opens the given location
-function v() {
-	if [ $# -eq 0 ]; then
-		nvim .;
-	else
-		nvim "$@";
-	fi;
-}
-
 function vimplugin() {
   sed -i "13iPlugin '$1'" ~/dotfiles/.vimrc;
   cp ~/dotfiles/.vimrc ~;

@@ -9,14 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-"Plugin 'tpope/vim-fugitive'
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'pangloss/vim-javascript'
-Plugin 'lifepillar/vim-solarized8'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -32,11 +25,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-set background=dark
-colorscheme solarized8
-
-:autocmd InsertEnter,InsertLeave * set cul!
 
 " Show line numbers
 set number

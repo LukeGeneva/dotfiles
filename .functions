@@ -7,14 +7,8 @@ function mk() {
 	mkdir -p "$@" && cd "$@";
 }
 
-# Sync dotfiles
-function syncdot() {
-	source ~/dotfiles/sync.sh;
-	reload;
-}
-
 function vimplugin() {
-  sed -i "13iPlugin '$1'" ~/dotfiles/.vimrc;
-  cp ~/dotfiles/.vimrc ~;
+  sed -i "13iPlugin '$1'" ~/dot-files/.vimrc;
+  cp ~/dot-files/.vimrc ~;
   viminstall;
 }

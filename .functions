@@ -8,7 +8,7 @@ function mk() {
 }
 
 function vimplugin() {
-  sed -i "13iPlugin '$1'" ~/dot-files/.vimrc;
-  cp ~/dot-files/.vimrc ~;
+  sed -i "13iPlugin '$1'" ~/dotfiles/.vimrc;
+  cp ~/dotfiles/.vimrc ~;
   viminstall;
 }

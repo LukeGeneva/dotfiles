@@ -1,6 +1,6 @@
 alias dl="cd ~/Downloads"
 alias doc="cd ~/Documents"
-alias dot="cd ~/dot-files"
+alias dot="cd ~/dotfiles"
 alias f=findall
 alias g=git
 alias o=open

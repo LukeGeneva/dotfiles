@@ -1,4 +1,4 @@
-set nocompatible
+set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -9,26 +9,9 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ervandew/supertab'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'junegunn/fzf'
-Plugin 'mattn/emmet-vim'
-Plugin 'morhetz/gruvbox'
-Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
+Plugin 'preservim/nerdtree'
 Plugin 'prettier/vim-prettier'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-commentary'
-Plugin 'vim-airline/vim-airline'
-Plugin 'w0rp/ale'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -86,6 +69,7 @@ set smarttab
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set autoindent
 
 " Swap : and ;
 noremap : ;
@@ -104,34 +88,4 @@ map 0 ^
 " Support .js extension for JSX
 let g:jsx_ext_required=0
 
-set background=dark
-colorscheme gruvbox
-
-" Multicursor settings
-let g:multi_cursor_use_default_mapping=0
-let g:multi_cursor_start_word_key      = '<C-n>'
-let g:multi_cursor_select_all_word_key = '<C-a>'
-let g:multi_cursor_start_key           = 'g<C-n>'
-let g:multi_cursor_select_all_key      = 'g<C-a>'
-let g:multi_cursor_next_key            = '<C-n>'
-let g:multi_cursor_prev_key            = '<C-p>'
-let g:multi_cursor_skip_key            = '<C-x>'
-let g:multi_cursor_quit_key            = '<Esc>'
-
-" Prettier
-let g:prettier#autoformat = 0
-let g:prettier#config#single_quote = 'true'
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
-
-" FZF
-nnoremap <silent> <C-p> :FZF<CR>
-
-" NERDTree
-let g:NERDTreeNodeDelimiter = "\u00a0"
-let NERDTreeQuitOnOpen=0
-let NERDTreeMouseMode=2
 let NERDTreeShowHidden=1
-let NERDTreeKeepTreeInNewTab=1
-
-" Deoplete
-let g:deoplete#enable_at_startup = 1

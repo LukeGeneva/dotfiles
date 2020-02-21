@@ -10,3 +10,4 @@ alias viminstall="vim +PluginInstall +qall"
 alias vs="code ."
 alias sd=syncdot
 alias commit="git add -A && git commit"
+alias proj="cd ~/projects"

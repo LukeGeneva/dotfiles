@@ -9,3 +9,4 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias viminstall="vim +PluginInstall +qall"
 alias vs="code ."
 alias sd=syncdot
+alias commit="git add -A && git commit"

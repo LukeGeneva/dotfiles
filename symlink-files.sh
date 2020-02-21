@@ -1,0 +1,10 @@
+rm ~/.zshrc;
+rm ~/.vimrc;
+rm ~/.inputrc;
+rm ~/.tmux.conf;
+rm ~/.gitconfig;
+ln ~/dotfiles/.zshrc ~/.zshrc;
+ln ~/dotfiles/.vimrc ~/.vimrc;
+ln ~/dotfiles/.inputrc ~/.inputrc;
+ln ~/dotfiles/.tmux.conf ~/.tmux.conf;
+ln ~/dotfiles/.gitconfig ~/.gitconfig;

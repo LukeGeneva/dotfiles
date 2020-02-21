@@ -9,8 +9,9 @@ function mk() {
 
 # Sync dotfiles
 function syncdot() {
-	source ~/dotfiles/sync.sh;
-	reload;
+  cp ~/dotfiles/.zshrc ~;
+  cp ~/dotfiles/.vimrc ~;
+  cp ~/dotfiles/.tmux.conf ~;
 }
 
 # `v` with no arguments opens the current directory in Vim,
@@ -40,4 +41,12 @@ function project() {
   git add -A;
   git commit -m "Initial commit";
   git push origin -u master;
+}
+
+function updatedot() {
+  dot;
+  git pull;
+  cd -;
+  syncdot;
+  reload;
 }

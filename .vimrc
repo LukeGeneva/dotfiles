@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'morhetz/gruvbox'
 Plugin 'preservim/nerdtree'
 Plugin 'prettier/vim-prettier'
 
@@ -89,3 +90,8 @@ map 0 ^
 let g:jsx_ext_required=0
 
 let NERDTreeShowHidden=1
+
+colorscheme gruvbox
+set bg=dark
+
+let g:prettier#autoformat_config_present = 1

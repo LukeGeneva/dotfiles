@@ -10,6 +10,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dense-analysis/ale'
 Plugin 'morhetz/gruvbox'
 Plugin 'preservim/nerdtree'
@@ -98,3 +100,5 @@ set bg=dark
 let g:prettier#autoformat_config_present = 1
 
 let g:ale_sign_column_always = 1
+
+let g:airline_theme='luna'

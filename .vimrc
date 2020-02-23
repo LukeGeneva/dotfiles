@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'dense-analysis/ale'
 Plugin 'morhetz/gruvbox'
 Plugin 'preservim/nerdtree'
 Plugin 'prettier/vim-prettier'

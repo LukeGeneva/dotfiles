@@ -96,3 +96,5 @@ colorscheme gruvbox
 set bg=dark
 
 let g:prettier#autoformat_config_present = 1
+
+let g:ale_sign_column_always = 1

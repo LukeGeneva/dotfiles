@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -95,8 +96,8 @@ let g:jsx_ext_required=0
 
 let NERDTreeShowHidden=1
 
-colorscheme gruvbox
-set bg=dark
+colorscheme solarized
+set background=dark
 
 let g:prettier#autoformat_config_present = 1
 

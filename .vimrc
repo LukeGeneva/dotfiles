@@ -18,6 +18,7 @@ Plugin 'dense-analysis/ale'
 Plugin 'morhetz/gruvbox'
 Plugin 'preservim/nerdtree'
 Plugin 'prettier/vim-prettier'
+Plugin 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -105,3 +106,5 @@ let g:prettier#autoformat_require_pragma = 0
 let g:ale_sign_column_always = 1
 
 let g:airline_theme='luna'
+
+let g:ctrlp_custom_ignore = {'dir': '**/node_modules'}

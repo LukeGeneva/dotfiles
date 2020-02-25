@@ -99,7 +99,8 @@ let NERDTreeShowHidden=1
 colorscheme solarized
 set background=dark
 
-let g:prettier#autoformat_config_present = 1
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
 
 let g:ale_sign_column_always = 1
 

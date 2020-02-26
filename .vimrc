@@ -14,12 +14,14 @@ Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier'
 Plug 'kien/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Initialize plugin system
 call plug#end()
 
 " Show line numbers
 set number
+set relativenumber
 
 " Ignore case when searching
 set ignorecase
@@ -90,7 +92,7 @@ let g:ale_sign_column_always = 1
 
 let g:airline_theme='luna'
 
-let g:ctrlp_custom_ignore = {'dir': '**/node_modules'}
+let g:ctrlp_custom_ignore = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " coc config
 let g:coc_global_extensions = [

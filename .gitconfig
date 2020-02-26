@@ -11,6 +11,7 @@
 	c = commit
 	co = checkout
 	s = status
+  b = branch
 
 [core]
-	editor = /usr/bin/vim
+	editor = /usr/bin/nvim

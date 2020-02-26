@@ -11,14 +11,14 @@ function mk() {
 # otherwise opens the given location
 function v() {
 	if [ $# -eq 0 ]; then
-		vim .;
+		nvim .;
 	else
-		vim "$@";
+		nvim "$@";
 	fi;
 }
 
 function vimplugin() {
-  sed -i "13iPlugin '$1'" ~/.vimrc;
+  sed -i "13iPlug '$1'" ~/.vimrc;
   viminstall;
 }
 

@@ -13,5 +13,3 @@
 	s = status
   b = branch
 
-[core]
-	editor = /usr/bin/nvim

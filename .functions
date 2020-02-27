@@ -22,12 +22,16 @@ function vimplugin() {
   viminstall;
 }
 
+function creategithubrepo() {
+  curl -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d "{\"name\": \"$1\"}" https://api.github.com/user/repos
+}
+
 function project() {
   cd ~/projects;
   mkdir $1;
   cd $1;
   touch README.md;
-  curl -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d '{"name": "$1"}' https://api.github.com/user/repos
+  creategithubrepo $1;
   git init;
   git remote add origin git@github.com:LukeGeneva/$1.git;
   git add -A;

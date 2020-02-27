@@ -92,7 +92,7 @@ let g:ale_sign_column_always = 1
 
 let g:airline_theme='luna'
 
-let g:ctrlp_custom_ignore = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " CoC CONFIG """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:coc_global_extensions = [

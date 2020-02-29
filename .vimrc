@@ -15,6 +15,7 @@ Plug 'prettier/vim-prettier'
 Plug 'kien/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()

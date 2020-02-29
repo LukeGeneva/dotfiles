@@ -45,3 +45,9 @@ function updatedot() {
   cd -;
   reload;
 }
+
+function clone() {
+  cd ~/projects;
+  git clone git@github.com:LukeGeneva/$1.git;
+  cd $1;
+}

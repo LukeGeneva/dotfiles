@@ -16,6 +16,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
+Plug 'MaxMEllon/vim-jsx-pretty'
 
 " Initialize plugin system
 call plug#end()

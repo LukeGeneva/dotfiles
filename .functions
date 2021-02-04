@@ -51,3 +51,11 @@ function clone() {
   git clone git@github.com:LukeGeneva/$1.git;
   cd $1;
 }
+
+function note() {
+	if [ $# -eq 0 ]; then
+    nvim ~/notes/notes.txt;
+	else
+		echo "\n$@\n" >> ~/notes/notes.txt;
+	fi;
+}

@@ -14,3 +14,4 @@ alias proj="cd ~/projects"
 alias vim=nvim
 alias dev="tmuxinator start"
 alias cpc="git log -1 --pretty=%B | pbcopy"
+alias n=note

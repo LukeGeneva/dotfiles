@@ -59,3 +59,11 @@ function note() {
 		echo "\n$@\n" >> ~/notes/notes.txt;
 	fi;
 }
+
+function todo() {
+	if [ $# -eq 0 ]; then
+    grep '^\[\] .*' ~/notes/notes.txt | sort;
+	else
+    note "[] $@";
+	fi;
+}

@@ -62,15 +62,15 @@ function note() {
 
 function todo() {
 	if [ $# -eq 0 ]; then
-    grep '^\[\] .*' ~/notes/notes.txt | sort;
+    grep '^T \[\] .*' ~/notes/notes.txt | sort;
 	else
-    note "[] $@";
+    echo "T [] $@" >> ~/notes/notes.txt;
 	fi;
 }
 
 function event() {
 	if [ $# -eq 0 ]; then
-    grep 'E 2[01][0-9][0-9]-[01][0-9]-[0-3][0-9]' ~/notes/notes.txt | sort;
+    grep '^E 2[01][0-9][0-9]-[01][0-9]-[0-3][0-9]' ~/notes/notes.txt | sort;
 	else
     note "E $@";
 	fi;

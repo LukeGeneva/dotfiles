@@ -82,6 +82,8 @@ set tw=500
 " Editing git commits
 autocmd filetype gitcommit setlocal spell tw=72
 
+autocmd filetype markdown setlocal spell tw=80
+
 " Remap VIM 0 to first non-blank character
 map 0 ^
 

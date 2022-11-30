@@ -1,14 +1,15 @@
+alias cal="gcalcli"
+alias commit="git add -A && git commit"
+alias cpc="git log -1 --pretty=%B | pbcopy"
 alias dl="cd ~/Downloads"
 alias doc="cd ~/Documents"
 alias dot="cd ~/dotfiles"
-alias g=git
+alias gac="git add -A && git commit"
+alias pip="$(pyenv which pip)"
+alias proj="cd ~/projects"
+alias python="$(pyenv which python)"
 alias reload="exec $SHELL"
+alias sd=syncdot
+alias vim=nvim
 alias viminstall="nvim +PlugInstall +qall"
 alias vs="code ."
-alias sd=syncdot
-alias commit="git add -A && git commit"
-alias proj="cd ~/projects"
-alias vim=nvim
-alias cpc="git log -1 --pretty=%B | pbcopy"
-alias note="vim $MY_NOTES_FILE"
-alias notes="vim $MY_NOTES_FILE"

@@ -1,4 +1,3 @@
-alias cal="gcalcli"
 alias commit="git add -A && git commit"
 alias cpc="git log -1 --pretty=%B | pbcopy"
 alias dl="cd ~/Downloads"
@@ -9,7 +8,5 @@ alias pip="$(pyenv which pip)"
 alias proj="cd ~/projects"
 alias python="$(pyenv which python)"
 alias reload="exec $SHELL"
-alias sd=syncdot
-alias vim=nvim
-alias viminstall="nvim +PlugInstall +qall"
 alias vs="code ."
+alias config="cd ~/.config"

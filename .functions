@@ -3,21 +3,6 @@ function mk() {
 	mkdir -p "$@" && cd "$@";
 }
 
-# `v` with no arguments opens the current directory in Vim,
-# otherwise opens the given location
-function v() {
-	if [ $# -eq 0 ]; then
-		nvim .;
-	else
-		nvim "$@";
-	fi;
-}
-
-function vimplugin() {
-  sed -i "13iPlug '$1'" ~/.vimrc;
-  viminstall;
-}
-
 function creategithubrepo() {
   curl -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d "{\"name\": \"$1\"}" https://api.github.com/user/repos
 }
@@ -35,7 +20,12 @@ function project() {
   git push origin -u master;
 }
 
-function n() {
-  nvim ~/Dropbox/notes/$(date +"%Y%m%d%H%M%S").md;
+# `v` with no arguments opens the current directory in Vim,
+# otherwise opens the given location
+function v() {
+	if [ $# -eq 0 ]; then
+		nvim .;
+	else
+		nvim "$@";
+	fi;
 }
-

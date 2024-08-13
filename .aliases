@@ -15,3 +15,4 @@ alias show_cursor="echo \"\033[?25h\""
 alias todo="vim $NOTES_DIR/todo.txt"
 alias vs="code ."
 alias g="git"
+alias mux=tmuxinator

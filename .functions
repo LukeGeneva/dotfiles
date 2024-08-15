@@ -29,3 +29,13 @@ function v() {
 		nvim "$@";
 	fi;
 }
+
+function n() {
+    cd $NOTES_DIR;
+
+    if [ -z "$1" ]; then
+        nvim scratchpad.txt
+    else
+        nvim "$1";
+    fi;
+}

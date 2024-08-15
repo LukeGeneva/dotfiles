@@ -131,7 +131,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 export JAVA_HOME="/usr/libexec/java_home"
 
-export PATH=$PATH:/Users/luke/Library/Python/3.8/bin
+export PATH=$PATH:/Users/luke/Library/Python/3.9/bin
 
 # bun completions
 [ -s "/Users/luke/.bun/_bun" ] && source "/Users/luke/.bun/_bun"

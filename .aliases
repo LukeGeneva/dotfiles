@@ -15,3 +15,4 @@ alias todo="nvim $NOTES_DIR/todo.txt"
 alias vs="code ."
 alias g="git"
 alias mux=tmuxinator
+alias vconf="cd ~/.config/nvim/ && nvim ."

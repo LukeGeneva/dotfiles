@@ -39,3 +39,8 @@ function n() {
         nvim "$1";
     fi;
 }
+
+function clip() {
+    ffmpeg -ss "$2" -i "$1" -to "$3" -c copy "$4"
+}
+

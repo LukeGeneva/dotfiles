@@ -16,3 +16,4 @@ alias vs="code ."
 alias g="git"
 alias mux=tmuxinator
 alias vconf="cd ~/.config/nvim/ && nvim ."
+alias gcp='git add . && git commit -m "$(date +%Y%m%d%H%M)" -m "$(git diff --name-only HEAD)" && git push'
